@@ -1,0 +1,174 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+section.profile-image {
+    height: 95dvh;
+    width: 25dvw;
+    background-image: url(../../../../assets/img/profile-pictures/profile3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 3px 3px 2px 2px black;
+
+    & .profile {
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        gap: 0.4dvh;
+
+        & h1 {
+            color: white;
+            font-weight: 700;
+            font-size: 3.5dvw;
+        }
+
+        & p {
+            color: rgb(124, 41, 112);
+            font-size: 1.3dvw;
+            margin-bottom: 5dvh;
+        }
+    }
+}
+
+section.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85dvh;
+    width: 50dvw;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    overflow: hidden;
+
+    & .content {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 2rem;
+        overflow-x: hidden;
+
+        & .top {
+            display: flex;
+            flex-direction: column;
+            padding: 5dvh 0px;
+            gap: 5dvh;
+
+            & h1 {
+                font-size: 3dvw;
+            }
+
+            & h3 {
+                font-size: 1.3dvw;
+                font-style: italic;
+                color: rgb(185, 95, 173);
+            }
+
+            & p {
+                font-size: 1dvw;
+                font-style: italic;
+                color: rgb(104, 104, 104);
+                letter-spacing: -0.5px;
+            }
+        }
+
+        & .bottom {
+            display: flex;
+            flex-direction: column;
+
+            & h1 {
+                font-size: 3dvw;
+            }
+
+            & .wraps {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                gap: 1dvw;
+                margin-top: 3dvh;
+
+                & .box {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1dvh;
+
+                    & img {
+                        height: 3dvw;
+                        width: 6dvh;
+                        filter: brightness(0) saturate(100%) invert(43%) sepia(63%) saturate(475%) hue-rotate(271deg) brightness(95%) contrast(88%);
+                    }
+
+                    & h2 {
+                        margin-top: 1dvh;
+                        font-size: 2dvw;
+                    }
+
+                    & p {
+                        font-size: 0.9dvw;
+                        font-style: italic;
+                        color: rgb(104, 104, 104);
+                        letter-spacing: -0.5px;
+                    }
+                }
+            }
+        }
+
+        & .divider {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 2px;
+            width: 100%;
+
+            & .line {
+                margin-top: 5dvh;
+                height: 2px;
+                width: 100%;
+                background-color: rgba(185, 95, 173, 0.247);
+            }
+        }
+
+        & footer {
+            margin-top: 5.5dvh;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            & .email, .phone {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 0.8dvw;
+
+                & img {
+                    height: 1.5dvw;
+                    filter: brightness(0) saturate(100%) invert(43%) sepia(63%) saturate(475%) hue-rotate(271deg) brightness(75%) contrast(88%);
+                }
+
+                & p {
+                    margin-top: 0.3dvw;
+                    font-size: 0.9dvw;
+                    color: rgb(104, 104, 104);
+                    letter-spacing: -0.5px;
+                }
+            }
+        }
+    }
+}

@@ -56,6 +56,12 @@ header {
                     }
                 }
             }
+
+            & .current {
+                & img {
+                    filter: drop-shadow(1px 1px 2px #ffffff) brightness(0) saturate(100%) invert(43%) sepia(63%) saturate(475%) hue-rotate(271deg) brightness(95%) contrast(88%);
+                }
+            }
         }
 
         & a {
