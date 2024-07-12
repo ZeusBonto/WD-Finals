@@ -1,0 +1,142 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+section.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 85dvh;
+    width: 75dvw;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    overflow: hidden;
+
+    & .title {
+        letter-spacing: 0.7dvw;
+        margin-top: 2dvh;
+        font-size: 5dvw;
+    }
+
+    & .divider {
+        margin-top: 3dvh;
+        margin-bottom: 1dvh;
+        display: flex;
+        justify-content: center;
+        height: 2px;
+        width: 100%;
+
+        & > .line {
+            display: flex;
+            height: 2px;
+            width: 90%;
+            background-color: rgba(216, 112, 202, 0.281);
+        }
+    }
+
+    & .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 100%;
+        width: 90%;
+        padding: 2rem;
+        overflow: hidden;
+        gap: 4dvw;
+
+        & .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1dvh;
+            width: 20dvw;
+            height: 52dvh;
+            padding: 3dvh 2dvw;
+            border: 3px rgba(216, 112, 202, 0.507) solid;
+            border-radius: 25px;
+
+            & img {
+                height: 5dvw;
+                width: 10dvh;
+                filter: brightness(0) saturate(100%) invert(43%) sepia(63%) saturate(475%) hue-rotate(271deg) brightness(95%) contrast(88%);
+            }
+
+            & h2 {
+                margin-top: 1dvh;
+                font-size: 2dvw;
+            }
+
+            & .rate {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 0.3dvw;
+
+                & > img {
+                    height: 3dvw;
+                    width: 6dvh;
+                }
+            }
+
+            & .divider {
+                margin-top: 3dvh;
+                margin-bottom: 1dvh;
+                display: flex;
+                justify-content: center;
+                height: 2px;
+                width: 100%;
+
+                & > .line {
+                    display: flex;
+                    height: 2px;
+                    width: 90%;
+                    background-color: rgba(216, 112, 202, 0.281);
+                }
+            }
+
+            & > .ratings {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                gap: 1dvh;
+
+                & > .rate {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 80%;
+
+                    & > p {
+                        font-size: 1dvw;
+                    }
+
+                    & > .rate1 {
+                        display: flex;
+                        flex-direction: row;
+
+                        & > img {
+                            height: 1dvw;
+                            width: 2dvh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
