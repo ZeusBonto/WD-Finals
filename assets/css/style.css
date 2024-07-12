@@ -11,6 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: black;
+    overflow: hidden;
 }
 
 section.profile-image {
@@ -159,5 +160,40 @@ section.hero {
                 }
             }
         }
+    }
+}
+
+.header-animate {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: moveUp 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.profile-image-animate {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: moveUp 1s ease forwards;
+    animation-delay: 1.2s;
+}
+
+.hero-animate {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: moveUp 1s ease forwards;
+    animation-delay: 1.4s;
+}
+
+.chat-animate {
+    opacity: 0;
+    transform: translateY(200px) translateX(-500px) rotateZ(90deg) scale(0.3);
+    animation: moveUp 1s ease forwards;
+    animation-delay: 3s;
+}
+
+@keyframes moveUp {
+    to {
+        opacity: 1;
+        transform: translateY(0) translateX(0) rotateZ(0) scale(1);
     }
 }
