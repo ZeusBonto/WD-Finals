@@ -68,7 +68,7 @@ section.hero {
             height: auto;
 
             & img {
-                max-width: 100%;
+                max-width: 90%;
                 display: block;
                 filter: brightness(0) saturate(100%) invert(43%) sepia(63%) saturate(475%) hue-rotate(271deg) brightness(95%) contrast(88%);
             }
@@ -82,7 +82,9 @@ section.hero {
                 width: 80%;
 
                 & h1, p {
+                    text-align: start;
                     font-size: 1.8dvw;
+                    font-style: italic;
                 }
             }
         }
@@ -106,6 +108,8 @@ section.hero {
                     text-decoration: none;
 
                     & p {
+                        border-left: 5px rgb(216, 112, 202) solid;
+                        padding-left: 5px;
                         position: relative;
                         color: white;
                         text-decoration: none;
@@ -126,6 +130,7 @@ section.hero {
                         &:hover {
                             transform: scale(1.1) translate(1dvw);
                             color: rgb(216, 112, 202);
+                            border-left: none;
                         }
 
                         &:hover::after {
