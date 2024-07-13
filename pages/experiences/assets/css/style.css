@@ -167,5 +167,92 @@ section.hero {
                 }
             }
         }
+
+        & .editing-content {
+            display: flex;
+            flex-direction: column;
+            margin-top: 3dvh;
+            gap: 5dvh;
+
+            & .first, .third {
+                display: flex;
+                flex-direction: row;
+                gap: 2dvw;
+            }
+
+            & .second {
+                display: flex;
+                flex-direction: row-reverse;
+                gap: 2dvw;
+            }
+
+            & .first, .second, .third {
+                & .right {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2dvh;
+
+                    & > h1 {
+                        font-size: 3dvw;
+                    }
+
+                    & > p {
+                        font-style: italic;
+                        color: rgb(104, 104, 104);
+                        letter-spacing: 0.5px;
+                        line-height: 3dvh;
+                    }
+                }
+
+                & .left {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    gap: 2dvh;
+
+                    & > h1 {
+                        font-size: 3dvw;
+                    }
+
+                    & > p {
+                        font-style: italic;
+                        color: rgb(104, 104, 104);
+                        letter-spacing: 0.5px;
+                        text-align: end;
+                        line-height: 3dvh;
+                    }
+                }
+            }
+        }
+
+        & footer {
+            margin-top: 2dvh;
+            margin-bottom: 3dvh;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 35dvw;
+
+            & .email, .phone {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 0.8dvw;
+
+                & img {
+                    height: 1.5dvw;
+                    filter: brightness(0) saturate(100%) invert(43%) sepia(63%) saturate(475%) hue-rotate(271deg) brightness(75%) contrast(88%);
+                }
+
+                & p {
+                    margin-top: 0.3dvw;
+                    font-size: 0.9dvw;
+                    color: rgb(104, 104, 104);
+                    letter-spacing: -0.5px;
+                }
+            }
+        }
     }
 }
