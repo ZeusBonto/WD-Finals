@@ -152,6 +152,7 @@ section.hero {
                     color: rgb(19, 19, 19);
                     border-radius: 10px;
                     transition: all 0.3s ease;
+                    cursor: pointer;
 
                     &:hover {
                         transform: scale(1.1);
