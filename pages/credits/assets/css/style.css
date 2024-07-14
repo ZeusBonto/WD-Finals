@@ -25,41 +25,53 @@ section.hero {
 
     & .title {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        align-items: flex-start;
+        width: 90%;
         letter-spacing: 0.4dvw;
-        margin-top: 2dvh;
-        font-size: 5dvw;
+        margin-top: 4dvh;
+        font-size: 3dvw;
         gap: 1dvw;
-
-        & img {
-            height: 3dvw;
-        }
     }
 
     & .divider {
-        margin-top: 3dvh;
+        margin-top: 2dvh;
         margin-bottom: 1dvh;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         height: 2px;
-        width: 100%;
+        width: 90%;
 
         & > .line {
             display: flex;
             height: 2px;
-            width: 90%;
+            width: 40%;
             background-color: rgba(216, 112, 202, 0.281);
         }
     }
 
     & > .content {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
         width: 90%;
-        
+        gap: 3dvh;
+        margin-top: 3dvh;
+
+        & > .box {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 2dvw;
+
+            & > img {
+                width: 15dvw;
+            }
+
+            & > p {
+                font-size: 1.8dvw;
+                font-style: italic;
+                color: rgb(104, 104, 104);
+                letter-spacing: -0.3px;
+            }
+        }
     }
 }
