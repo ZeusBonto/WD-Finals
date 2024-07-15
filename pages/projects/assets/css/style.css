@@ -52,7 +52,7 @@ section.hero {
 
     & > .content {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: row;
         width: 90%;
         gap: 3dvh;
         margin-top: 3dvh;
@@ -60,47 +60,53 @@ section.hero {
         scrollbar-width: thin;
         scrollbar-color: rgb(77, 77, 77) rgb(31, 31, 31);
 
-        & .card {
+        & .col {
             display: flex;
             flex-direction: column;
-            width: 20dvw;
-            background-color: rgb(31, 31, 31);
-            border-radius: 20px;
-            border: 5px solid rgba(221, 142, 211, 0.226);
-            overflow: hidden;
-            height: 24dvh;
-            transition: all 0.3s ease;
+            gap: 2dvh;
 
-            & img {
-                height: 20dvh;
+            & .card {
+                display: flex;
+                flex-direction: column;
                 width: 20dvw;
-            }
+                background-color: rgb(31, 31, 31);
+                border-radius: 20px;
+                border: 5px solid rgba(221, 142, 211, 0.226);
+                overflow: hidden;
+                height: 24dvh;
+                transition: all 0.3s ease;
 
-            & h1 {
-                margin-left: 1dvw;
-            }
-
-            & p {
-                padding: 0px 1dvw;
-                margin-top: 2dvh;
-                font-size: 0.9dvw;
-                font-style: italic;
-                color: white;
-                letter-spacing: -0.5px;
-            }
-
-            & a {
-                margin-left: 1dvw;
-                margin-top: 2dvh;
-
-                & button {
-                    cursor: pointer;
-                    padding: 1dvh 1dvw;
+                & img {
+                    height: 20dvh;
+                    width: 20dvw;
                 }
-            }
 
-            &:hover {
-                height: 45dvh;
+                & h1 {
+                    margin-left: 1dvw;
+                }
+
+                & p {
+                    padding: 0px 1dvw;
+                    margin-top: 2dvh;
+                    font-size: 0.9dvw;
+                    font-style: italic;
+                    color: white;
+                    letter-spacing: -0.5px;
+                }
+
+                & a {
+                    margin-left: 1dvw;
+                    margin-top: 2dvh;
+
+                    & button {
+                        cursor: pointer;
+                        padding: 1dvh 1dvw;
+                    }
+                }
+
+                &:hover {
+                    height: 50dvh;
+                }
             }
         }
     }
